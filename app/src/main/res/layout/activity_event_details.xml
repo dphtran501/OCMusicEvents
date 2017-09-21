@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="@dimen/event_details_layout_margins"
     android:orientation="vertical"
     tools:context="edu.orangecoastcollege.cs273.dtran258.ocmusicevents.EventDetailsActivity">
 
@@ -12,6 +13,7 @@
         android:id="@+id/eventImageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/event_details_view_margins"
         android:layout_weight="2"
         app:srcCompat="@mipmap/ic_launcher"/>
 
@@ -19,22 +21,24 @@
         android:id="@+id/eventTitleTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/event_details_view_margins"
         android:text="TextView"
-        android:textSize="40sp"/>
+        android:textSize="@dimen/event_title_text_size"/>
 
     <TextView
         android:id="@+id/eventDetailsTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/event_details_view_margins"
         android:layout_weight="1"
         android:text="TextView"
-        android:textSize="20sp"/>
+        android:textSize="@dimen/event_details_layout_margins"/>
 
     <Button
-        android:id="@+id/backbutton"
+        android:id="@+id/backButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="goBackToList"
-        android:text="Button"
-        android:textSize="30sp"/>
+        android:text="@string/button_name"
+        android:textSize="@dimen/button_text_size"/>
 </LinearLayout>
