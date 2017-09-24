@@ -13,9 +13,20 @@ import android.widget.TextView;
 import java.io.IOException;
 import java.io.InputStream;
 
+/**
+ * This activity displays information about an artist and the event he/she is performing at. The
+ * information is specified by which list item was clicked in <code>EventsListActivity</code>.
+ */
 public class EventDetailsActivity extends AppCompatActivity
 {
 
+    /**
+     * Initializes <code>EventDetailsActivity</code> by inflating its UI.
+     *
+     * @param savedInstanceState Bundle containing the data it recently supplied in
+     *                           onSaveInstanceState(Bundle) if activity was reinitialized after
+     *                           being previously shut down. Otherwise it is null.
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -53,6 +64,10 @@ public class EventDetailsActivity extends AppCompatActivity
 
     }
 
+    /**
+     * Terminates this activity and returns to <code>EventsListActivity</code>.
+     * @param v The <code>View</code> that called this method.
+     */
     public void goBackToList(View v)
     {
         // Terminates the current activity (terminates the details activity)
