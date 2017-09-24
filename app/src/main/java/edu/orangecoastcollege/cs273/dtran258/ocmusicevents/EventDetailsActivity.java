@@ -16,6 +16,10 @@ import java.io.InputStream;
 /**
  * This activity displays information about an artist and the event he/she is performing at. The
  * information is specified by which list item was clicked in <code>EventsListActivity</code>.
+ *
+ * @author Derek Tran
+ * @version 1.0
+ * @since September 21, 2017
  */
 public class EventDetailsActivity extends AppCompatActivity
 {
